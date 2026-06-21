@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>PORTFOLIO</h1>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#project">PROJECT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <h2>Full-stack Developer</h2>
+            <h1>MY PORTFOLIO</h1>
+            <p>Hi, <span class="highlight">I'm Vishnu NM.</span> I bridge the gap between user experience and complex backend logic. I’m a Full Stack Developer who loves building clean, scalable, and user-centric web applications. Whether it's crafting responsive user interfaces with React/Next.js or structuring robust databases and APIs with Node.js/PostgreSQL, I enjoy engineering solutions that work seamlessly under the hood and look great on the surface.</p>
+            <a href="#contact" class="btn-primary">Get In Touch</a>
+        </section>
+
+        <section id="project" class="project-section">
+            <h2 class="section-title">PROJECTS</h2>
+            
+            <div class="project-grid">
+               <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./images/The Multi-Tenant SaaS Platform.png" alt="Multi-Tenant SaaS Platform" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>The Multi-Tenant SaaS Platform</h3>
+                        <p>A web application where multiple different businesses can sign up, manage their own staff, track inventory, and generate billing reports.</p>
+                    </div>
+               </div>
+
+               <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./images/The High-Traffic Analytics Dashboard.png" alt="High-Traffic Analytics Dashboard" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>The High-Traffic Analytics Dashboard</h3>
+                        <p>A dashboard that captures real-time user events (like clicks, page views, or system errors) from an external tracker and displays them in charts.</p>
+                    </div>
+               </div>
+
+               <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./images/Real-Time Tracking & Mapping App.png" alt="Real-Time Tracking App" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Real-Time Tracking & Mapping App</h3>
+                        <p>A platform like UberEats or a fleet tracker where a delivery person's location is updated live on a map for the customer.</p>
+                    </div>
+               </div>
+
+               <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./images/Media-Heavy Content Platform (e.g., AudioVideo Streaming Site).png" alt="Media Platform" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Media-Heavy Content Platform</h3>
+                        <p>A platform where users can upload audio or video files, organize them into playlists, and stream them fluidly.</p>
+                    </div>
+               </div>
+
+               <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./images/The Modern Classic AI-Powered Knowledge Base & Chatbot.png" alt="The Modern Classic AI-Powered Knowledge Base & Chatbot" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>The Modern Classic AI-Powered Knowledge Base & Chatbot</h3>
+                        <p>An internal wiki for a company where users can upload documentation (PDFs, Markdown), and an AI chatbot answers questions based only on those documents.</p>
+                    </div>
+               </div>
+
+               <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./images/The Micro-SaaS Automated Invoice & Expense Tracker.png" alt="The Micro-SaaS: Automated Invoice & Expense Tracker" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>The Micro-SaaS: Automated Invoice & Expense Tracker</h3>
+                        <p>Instead of a basic dashboard, build a multi-tenant platform where small businesses can manage their financials, track expenses via OCR, and send automated payment reminders.</p>
+                    </div>
+               </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title2">CONTACT</h2>
+            <div class="form-container">
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="Your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required placeholder="Your message..."></textarea>
+                    </div>
+                    <button class="btn-contact" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="social-link">
+                <li><a href="https://github.com/vishnu-webdev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/vishnnuu/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+            <div class="back-to-top">
+                <a href="#">Back to top &uarr;</a>
+            </div>
+            <p>&copy; 2026 Vishnu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav');
+        const navLinks = document.querySelectorAll('.nav a');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
